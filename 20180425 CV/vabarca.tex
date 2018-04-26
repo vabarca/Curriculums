@@ -1,0 +1,120 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+ \listfiles
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% temas de moderncv
+\moderncvstyle{casual}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{blue}   
+
+\usepackage{verbatim}
+\usepackage{url}
+
+% moderncv themes
+\moderncvtheme[grey]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' andmoderncv 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75, top=1.5cm, bottom=1.5cm, right=2cm, left=2cm]{geometry}
+%\usepackage[scale=0.75, top=2cm, bottom=2cm, ]{geometry}
+\setlength{\hintscolumnwidth}{2cm}	% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Vicente}
+\familyname{Abarca}
+\address{}{}    % optional, remove the line if not wanted
+%\mobile{+34 644 11 87 37}                    % optional, remove the line if not wanted
+%\email{}   
+%\photo[64pt]{Fotos/fotoVisen}                   % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{Fotos/foto4.jpg}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+%-----------------------------
+
+%\vspace{-3\baselineskip}
+\section{Personal Information}
+\cvline{}{\textbf{Age:} 39 years old}{}{}{}
+%\cvline{}{\textbf{Direccion:} c/ Acequia de la cadena 3}{}{}{}
+\cvline{}{\textbf{Phone:} (+34) 644 11 87 37}{}{}{}
+\cvline{}{\textbf{mail:} viabfer@gmail.com}{}{}{}
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Experience +10 years}
+
+\cventry{2014 - present}{Software Engineering Analyst}{Celestica}{Pobla de Vallbona (Spain)}{}{Product design, engineering services, functional testing and manufacturing process improvements for aerospace, healthcare and communication customer projects.}
+
+\cventry{2009 - 2014}{Project manager \& Sr. R\&D Engineer}{I3BH - LabHuman}{Valencia (Spain)}{}{In studies focused on the operation of natural interfaces; AR techniques, real time systems, RGB-D cameras, inertial \& multitouch electronic devices and modern computer vision algorithms.}
+
+\cventry{2007 - 2009}{Jr.R\&D Engineer}{I3BH - LabHuman}{Valencia (Spain)}{}{R\&D in multitouch systems based on modern electronic devices and computer vision algorithms.}
+
+\cventry{2003 - 2004}{Jr. R\&D Technical Electronic Engineer}{ITE - Instituto tecnológico de la energía}{Valencia (Spain)}{}{R\&D in early warning electronic radiation dosimeters and networks analyzers.}
+
+\cventry{2001 - 2003}{Jr. Tech. Electronic Engineer - tester}{ITE - Instituto tecnológico de la energía}{Valencia (Spain)}{}{R\&D in lightning protection devices and overvoltage/overcurrent certification tests.}
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Education}
+\cventry{2006--2006}{Bioengineering}{UV}{Valparaiso, Chile}{}{}
+\cvline{PFC:}{\small Small \& portable X-ray medical equipment desing.}
+
+\cventry{2001--2006}{Master's level degree in Telecommunications, Bioelectronics}{UPV}{Valencia, Spain}{}{} 
+
+\cventry{2000--2001}{Master in Telecommunications}{Högskolan i Gävle}{Gävle, Sweden}{}{}
+\cvline{PFC:}{\small Temperature controler design for RF transistor over silicon wafer}
+
+\cventry{1997--2001}{Bachelor's level degree in Electronics Engineering}{UPV}{Valencia, Spain}{}{} 
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Technical knowledge}
+
+\cvline{Software}{\small C/C++, C\#, Python, NI Labview, NI TestStand, QT, Visual Basic, Multithread programming, 3D, RA, Computer Vision, OpenGL, OpenCV, OpenNI}
+
+\cvline{Hardware}{\small Embedded systems, Linux drivers, ARM, PSOCS, SMARTFUSION, 8051, PIC, ATmega, MSP430, Arduino, Raspberry Pi, Toradex, Zigbee, Bluetooth, RF, A/D design}
+
+\cvline{App}{\small Unity (3D), Eagle, Orcad, SolidWorks, FreeCAD, Icestudio (FPGAs), Visual Studio, PlatformIO }
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Additional training}
+\cvline{Courses}{Linux Device Drivers(40h), SMARTFUSION:ARM Cortex SOC Design(20h), Orcad \& Pspice (40h), OpenGl (20h) and self-training (RESTful APIs, Python, Software development, design patterns, FPGAs }{}
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Languages}
+\cvlanguage{English}{Intermediate/high}{Vancouver Eurocentres English Course}{}{}{}
+
+%-----------------------------
+%\vspace{-1\baselineskip}
+\section{Further information}
+\cvitem{}{\url{https://www.linkedin.com/in/vicenteabarcafernandez05031979/}}
+\cvitem{}{\url{https://github.com/vabarca/}}
+
+%-----------------------------
+
+\end{document}
